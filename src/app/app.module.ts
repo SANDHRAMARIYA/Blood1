@@ -9,7 +9,7 @@ import { SearchdonarComponent } from './searchdonar/searchdonar.component';
 import { DeletedonarComponent } from './deletedonar/deletedonar.component';
 import { ViewallComponent } from './viewall/viewall.component';
 import { RouterModule, Routes } from '@angular/router';
-
+import {HttpClientModule} from '@angular/common/http'
 
 
 const appRoutes:Routes=[
@@ -39,7 +39,8 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
