@@ -9,6 +9,16 @@ export class SearchdonarComponent implements OnInit {
 
   constructor() { }
 
+
+
+  Blood=""
+readValues=()=>{
+  let data = {
+    "Blood":this.Blood
+  }
+  console.log(data)
+}
+
   ngOnInit(): void {
   }
 
